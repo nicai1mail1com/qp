@@ -1,0 +1,176 @@
+﻿@charset "utf-8";
+body,.lazy-box{
+    background: #0f0a06;
+    max-width: 768px;
+    min-width: 320px;
+    margin: auto;
+    width: 100%;
+}
+.lazy-box .div-img img{
+    max-width: 768px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+.div-li-3{position: relative;}
+.div-li-3 img{
+    width:100%;
+}
+.download_box .android_link_click{float:left;}
+.download_box .ios_link_click{float:right;}
+.download_box,.banner_box{
+    width: 90%;
+    height: 50px;
+    display: block;
+    margin: auto;
+    position: relative;
+    bottom: 50px;
+}
+.download_box a {
+    height: 50px;
+    width: 45%;
+    display: block;
+}
+.banner_div{
+    width: 74%;
+    position: absolute;
+    top: -1px;
+    left: 12.7%;
+}
+.banner{
+    width:80%;
+    margin:auto;
+}
+#lazyload .tb-btn{bottom:0;margin-top: 10px;}
+.tb-arrow .prev,.tb-arrow .next{width:50px;display:block;}
+
+
+/*banner*/
+.banner { position: relative; text-align: center;}
+.banner ul {overflow: hidden;}
+.banner li { list-style: none;}
+.banner ul li { float: left;}
+.btn_on{position: absolute;top: 180px;}
+
+/*视频播放区域*/
+.div-li-3{position: relative;}
+.layer-video{
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    width: 40%;
+    height: 120px;
+}
+#banner-id{margin:auto;}
+#layui-layer1{background: none;}
+.layui-carousel-arrow{left:0;right:0;}
+#banner-id .layui-carousel-arrow{background: none;left:1px;right: 1px;height: 60px;top: 80px;}
+#banner-id .layui-carousel-ind li{background:url('../img/down/btn.png');}
+#banner-id .layui-carousel-ind li.layui-this{background:url('../img/down/btn_on.png');}
+#banner-id .layui-carousel-ind{top:-20px}
+
+.div-li-2,.div-li-4{position:relative;}
+.code{
+    width:100%;
+    position:absolute;
+    top:55%;
+    height: 130px;
+}
+.code_box{
+    width:115px;
+    margin:auto;
+}
+.code_div{
+    width: 236px;
+    padding-left: 2px;
+    margin: auto;
+    top: -128px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .lazy-box .div-img{margin-bottom: -1px;}
+    .download_box a {height: 130px;}
+    #banner-id .layui-carousel-arrow {
+        height: 90px;
+        width: 70px;
+    }
+    .download_box, .banner_box{margin-top:-130px;}
+}
+/*微信中打开*/
+.weixin-tip {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    filter: alpha(opacity = 80);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+}
+.weixin-tip p {
+    text-align: center;
+    margin-top: 10%;
+    padding: 0 5%;
+}
+/*非safari浏览器打开*/
+.safari-tip{display:none;position:fixed;left:0;top:0;background:rgba(0,0,0,0.8);filter:alpha(opacity=80);width:100%;height:100%;z-index:9;}
+.safariBtn{
+    width: 80%;
+    height: 40px;
+    margin-top: 25%;
+    margin-left: 10%;
+    color: #ffffff;
+    border: 1px;
+    background: #238fe0;
+    bottom: 20%;
+}
+.safari-tip p{padding-top:40%;}
+.btn_tip{
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 28%;
+    left: 25%;
+}
+/*非safari浏览器打开*/
+.game{padding-bottom: 50px;padding-top: 80px;background-color: #ffffff;}
+.game .game_pic img{width:100%;}
+.game_pic{margin-bottom:50px;}
+.download-title{
+    position: fixed;
+    background-color:#fff;
+    width:91%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.layui-layer-page .layui-layer-setwin .layui-layer-close{
+    right: 0;
+    top: 2px;
+}
+.banner-top,.banner-down{
+    width: 74.6%;
+    margin: auto;
+}
+.banner-top {
+    position: relative;
+    top: 4.5%;
+    z-index: 100;
+}
+.banner-down {
+    position: relative;
+    top: -6%;
+}
+.banner-line{
+    border-left:3px #d7a854 solid;
+    border-right:3px #d7a854 solid;
+}

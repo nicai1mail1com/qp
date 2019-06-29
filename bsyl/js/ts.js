@@ -5,14 +5,14 @@ layui.use(['layer','flow', 'jquery','carousel'], function(){
   	$(".weixin-tip").hide();
   })
   /*下载提示*/
-	var loadstr="<div class='download-title'>苹果手机下载帮助<span class='layui-layer-setwin'><a class='layui-layer-ico layui-layer-close layui-layer-close2' href='javascript:;'></a></span></div><div class='game'><div class='game_pic'><a href='javascript:;' class='ios_link_click'><img src='./img/download/ios.jpg'/></a><br><img src='./img/download/index1.jpg'><br><img src='./img/download/img-0.jpg'><br><img src='./img/download/index2.jpg'><br><img src='./img/download/img-1.jpg'><br><img src='./img/download/index3.jpg'><br><img src='./img/download/img-2.jpg'><br><img src='./img/download/index4.jpg'><br><img src='./img/download/img-3.jpg'><br><img src='./img/download/index5.jpg'><br><img src='./img/download/img-4.jpg'><br><img src='./img/download/index6.jpg'><br><img src='./img/download/img-5.jpg'><br><a href='https://9uc.oss-cn-hangzhou.aliyuncs.com/App.mobileprovision'><img src='./img/download/xinren.jpg'></a><br></div></div></div>";
+	var loadstr="<div class='download-title'>苹果手机下载帮助<span class='layui-layer-setwin'><a class='layui-layer-ico layui-layer-close layui-layer-close2' href='javascript:;'></a></span></div><div class='game'><div class='game_pic'><a href='javascript:;' class='ios_link_click'><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/ios.jpg'/></a><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/index1.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/img-0.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/index2.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/img-1.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/index3.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/img-2.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/index4.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/img-3.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/index5.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/img-4.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/index6.jpg'><br><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/img-5.jpg'><br><a href='https://9uc.oss-cn-hangzhou.aliyuncs.com/App.mobileprovision'><img src='https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/download/xinren.jpg'></a><br></div></div></div>";
 	//微信中打开，显示右上角打开
 	var ua = navigator.userAgent.toLowerCase();
 	function is_weixin() {
 		if(ua.match(/iPhone/i) || ua.match(/iPad/i) == "iPad"){
 			$(".weixin-tip p").css("margin-top","0");
 			$(".weixin-tip p").css("padding","0")
-			$(".weixin-tip img").attr("src","./img/iostip.png");
+			$(".weixin-tip img").attr("src","https://cdn.jsdelivr.net/gh/nicai233/qp/bsyl/img/iostip.png");
 		}
 		if (ua.match(/MicroMessenger/i) == "micromessenger") {
 			return true;
